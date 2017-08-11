@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting value="true" name="callSettersOnNulls" />
+		<setting value="false" name="cacheEnabled" />
+		<setting value="true" name="useGeneratedKeys" />
+		<setting value="REUSE" name="defaultExecutorType" />
+		<setting value="VARCHAR" name="jdbcTypeForNull" />
+		<setting value="true" name="mapUnderscoreToCamelCase" />
+	</settings>
+
+
+	<typeAliases>
+
+		<!-- 시스템공통 -->
+		<package name="com.seoul.post.to" />
+		<package name="com.seoul.his.common.to" />
+		<package name="com.seoul.his.common.util" />
+
+		<package name="com.seoul.his.com.hospitalcode.to" />
+		<package name="com.seoul.his.com.system.to" />
+
+		<package name="com.seoul.his.hdm.admission.to" />
+		<package name="com.seoul.his.hdm.basebusiness.to" />
+		<package name="com.seoul.his.hdm.consultationfee.to" />
+		<package name="com.seoul.his.hdm.foreign.to" />
+		<package name="com.seoul.his.hdm.outstandingamount.to" />
+		<package name="com.seoul.his.hdm.patient.to" />
+		<package name="com.seoul.his.msv.mcm.patientservice.to" />
+		<package name="com.seoul.his.msv.mcm.doctorschedule.to" />
+		<package name="com.seoul.his.msv.pre.nursingmanagement.to" />
+		<package name="com.seoul.his.msv.pre.operationrecord.to" />
+		<package name="com.seoul.his.msv.pre.prescriptionmanagement.to" />
+
+		<package name="com.seoul.his.msv.sup.bookingexam.to" />
+		<package name="com.seoul.his.msv.sup.comprehensiveexam.to" />
+		<package name="com.seoul.his.msv.sup.endoscoperadiologydiagnosis.to" />
+		<package name="com.seoul.his.msv.sup.foreignpharmacy.to" />
+		<package name="com.seoul.his.msv.sup.generalexam.to" />
+		<package name="com.seoul.his.msv.sup.hosptaldiet.to" />
+		<package name="com.seoul.his.msv.sup.hosptalpharmacy.to" />
+		<package name="com.seoul.his.msv.sup.pathology.to" />
+		<package name="com.seoul.his.msv.sup.physicaltherapy.to" />
+
+		<!-- 인사 -->
+      <package name="com.seoul.his.hrs.appoint.to" />            <!-- 발령관리 -->
+      <package name="com.seoul.his.hrs.emp.to" />               <!-- 인사관리 -->
+      <package name="com.seoul.his.hrs.ret.to" />               <!-- 퇴직관리 -->
+      <package name="com.seoul.his.hrs.salBase.to" />            <!-- 급여기초 -->
+      <package name="com.seoul.his.hrs.salMng.to" />            <!-- 급여관리 -->
+      <package name="com.seoul.his.hrs.yeta.to" />            <!-- 예산관리 -->
+      <package name="com.seoul.his.hrs.guntae.to" />            <!-- 연말정산관리 -->
+
+		<!-- 물류 -->
+		<package name="com.seoul.his.log.base.to" />            <!-- 물류기초 -->
+		<package name="com.seoul.his.log.csr.to" />             <!-- 중앙공급실관리 -->
+		<package name="com.seoul.his.log.ctrt.to" />            <!-- 계약관리 -->
+		<package name="com.seoul.his.log.demd.to" />            <!-- 요구관리 -->
+		<package name="com.seoul.his.log.inpt.to" />            <!-- 청구반납 -->
+		<package name="com.seoul.his.log.inven.to" />           <!-- 재고관리 -->
+		<package name="com.seoul.his.log.prcs.to" />            <!-- 물품청구/반납 -->
+		<package name="com.seoul.his.log.store.to" />           <!-- 입고관리 -->
+		
+		
+
+
+		<!-- 회계 -->
+		<package name="com.seoul.his.acc.elementary.to" />        <!-- 기본 -->
+		<package name="com.seoul.his.acc.resol.to" />				<!-- 결의서 -->
+    <package name="com.seoul.his.acc.slip.to" />				<!-- 전표 -->
+		<package name="com.seoul.his.acc.vat.to" />				<!--세금계산서 -->
+		<package name="com.seoul.his.acc.budget.to" />			<!--예산 -->
+    <package name="com.seoul.his.acc.closing.to" />            <!-- 결산/재무재표 -->
+    <package name="com.seoul.his.acc.fixedasset.to" />         <!-- 고정자산 -->
+
+        
+		
+
+
+
+ 		<!-- 경영통계 -->
+ 	  <package name="com.seoul.his.bst.mis.to" />            						<!--Restfull 통합 경영정보 -->
+      <package name="com.seoul.his.bst.patientStatus.dailyPatient.to" />            <!-- 일일환자현황 -->
+      <package name="com.seoul.his.bst.patientStatus.monthlyPatient.to" />            <!-- 일일환자현황 -->
+      <package name="com.seoul.his.bst.patientStatus.patientByDept.to" />            <!-- 일일환자현황 -->
+      <package name="com.seoul.his.bst.patientStatus.selectDailyPatient.to" />            <!-- 일일환자현황 -->
+
+      <package name="com.seoul.his.bst.HospitalStaffPersonnelStatus.to" />            <!-- 원내직원인원현황 -->
+
+   </typeAliases>
+
+</configuration>

@@ -30,7 +30,7 @@ public class CodeController {
 		codeInfoBean.setCodeList(datasetBeanMapper.datasetToBeans(inData, CodeBean.class));
 		codeInfoBean.setDetailCodeList(datasetBeanMapper.datasetToBeans(inData, DetailCodeBean.class));
 		baseServiceFacade.batchCode(codeInfoBean);
-
+ d
 		findCodeList(request, response);
 	}
 }
